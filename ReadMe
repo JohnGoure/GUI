@@ -1,7 +1,7 @@
 GUI
 -----
 
-This is a Graphical User Interface project assigned by Mr. Youngblood at the University of Incarnate Word.
+Mr. Youngblood at the University of Incarnate Word demonstrated how to create Windows using C++ on the windows Operating system, but apple computers could not follow along.
 Apple users were having a problem making windows in C++ without the Windows API provided by Microsoft Windows.
 There is a simple way of making windows and views on an Apple computer using Objective-C and Apples API's, however this assignment must be written in C++.
 

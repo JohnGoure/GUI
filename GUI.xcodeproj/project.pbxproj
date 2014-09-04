@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		A71B805419B91008003BDEBB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A71B805319B91008003BDEBB /* main.cpp */; };
 		A71B805619B91008003BDEBB /* GUI.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A71B805519B91008003BDEBB /* GUI.1 */; };
+		A71B805E19B91016003BDEBB /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71B805C19B91016003BDEBB /* OpenAL.framework */; };
+		A71B805F19B91016003BDEBB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71B805D19B91016003BDEBB /* OpenGL.framework */; };
+		A71B806119B9101B003BDEBB /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71B806019B9101B003BDEBB /* GLUT.framework */; };
+		A71B806319B91028003BDEBB /* libglfw3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A71B806219B91028003BDEBB /* libglfw3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +32,10 @@
 		A71B805019B91008003BDEBB /* GUI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GUI; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71B805319B91008003BDEBB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A71B805519B91008003BDEBB /* GUI.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = GUI.1; sourceTree = "<group>"; };
+		A71B805C19B91016003BDEBB /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		A71B805D19B91016003BDEBB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		A71B806019B9101B003BDEBB /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		A71B806219B91028003BDEBB /* libglfw3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.dylib; path = ../../../../../usr/local/lib/libglfw3.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A71B806319B91028003BDEBB /* libglfw3.dylib in Frameworks */,
+				A71B806119B9101B003BDEBB /* GLUT.framework in Frameworks */,
+				A71B805E19B91016003BDEBB /* OpenAL.framework in Frameworks */,
+				A71B805F19B91016003BDEBB /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +56,10 @@
 		A71B804719B91008003BDEBB = {
 			isa = PBXGroup;
 			children = (
+				A71B806219B91028003BDEBB /* libglfw3.dylib */,
+				A71B806019B9101B003BDEBB /* GLUT.framework */,
+				A71B805C19B91016003BDEBB /* OpenAL.framework */,
+				A71B805D19B91016003BDEBB /* OpenGL.framework */,
 				A71B805219B91008003BDEBB /* GUI */,
 				A71B805119B91008003BDEBB /* Products */,
 			);
@@ -156,7 +172,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -189,7 +205,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -197,6 +213,12 @@
 		A71B805A19B91008003BDEBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include/GLFW,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -204,6 +226,12 @@
 		A71B805B19B91008003BDEBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include/GLFW,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

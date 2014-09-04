@@ -5,5 +5,4 @@ This is a Graphical User Interface project assigned by Mr. Youngblood at the Uni
 Apple users were having a problem making windows in C++ without the Windows API provided by Microsoft Windows.
 There is a simple way of making windows and views on an Apple computer using Objective-C and Apples API's, however this assignment must be written in C++.
 
-I used OpenGL, OpenAL, and GLUT to solve this problem. The included x-code project and main.cpp file will build
-a GUI that has a very colorful triangle.
+I used OpenGL, OpenAL, and GLUT to solve this problem. The included x-code project and main.cpp file will build a GUI that has a very colorful triangle.

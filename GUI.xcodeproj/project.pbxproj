@@ -12,7 +12,6 @@
 		A71B805E19B91016003BDEBB /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71B805C19B91016003BDEBB /* OpenAL.framework */; };
 		A71B805F19B91016003BDEBB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71B805D19B91016003BDEBB /* OpenGL.framework */; };
 		A71B806119B9101B003BDEBB /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71B806019B9101B003BDEBB /* GLUT.framework */; };
-		A71B806319B91028003BDEBB /* libglfw3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A71B806219B91028003BDEBB /* libglfw3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,7 +34,6 @@
 		A71B805C19B91016003BDEBB /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		A71B805D19B91016003BDEBB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		A71B806019B9101B003BDEBB /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
-		A71B806219B91028003BDEBB /* libglfw3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.dylib; path = ../../../../../usr/local/lib/libglfw3.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A71B806319B91028003BDEBB /* libglfw3.dylib in Frameworks */,
 				A71B806119B9101B003BDEBB /* GLUT.framework in Frameworks */,
 				A71B805E19B91016003BDEBB /* OpenAL.framework in Frameworks */,
 				A71B805F19B91016003BDEBB /* OpenGL.framework in Frameworks */,
@@ -56,11 +53,8 @@
 		A71B804719B91008003BDEBB = {
 			isa = PBXGroup;
 			children = (
-				A71B806219B91028003BDEBB /* libglfw3.dylib */,
-				A71B806019B9101B003BDEBB /* GLUT.framework */,
-				A71B805C19B91016003BDEBB /* OpenAL.framework */,
-				A71B805D19B91016003BDEBB /* OpenGL.framework */,
 				A71B805219B91008003BDEBB /* GUI */,
+				A7604DC619B91CBB003ED2D7 /* Frameworks */,
 				A71B805119B91008003BDEBB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +74,16 @@
 				A71B805519B91008003BDEBB /* GUI.1 */,
 			);
 			path = GUI;
+			sourceTree = "<group>";
+		};
+		A7604DC619B91CBB003ED2D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A71B805C19B91016003BDEBB /* OpenAL.framework */,
+				A71B805D19B91016003BDEBB /* OpenGL.framework */,
+				A71B806019B9101B003BDEBB /* GLUT.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +259,7 @@
 				A71B805B19B91008003BDEBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

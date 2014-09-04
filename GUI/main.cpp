@@ -12,7 +12,6 @@
 #include <OpenAL/alc.h>
 #include <OpenGL/gl.h>
 #include <GLUT/GLUT.h>
-#include <glfw3.h>
 
 using namespace std;
 
